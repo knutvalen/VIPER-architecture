@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="tbJ-GZ-8MY" customClass="JediListCollectionViewCell" customModule="VIPER_architecture" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="219" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="60b-Wk-XRA">
+                <rect key="frame" x="0.0" y="0.0" width="219" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jedi name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxm-dk-bjW">
+                        <rect key="frame" x="8" y="8" width="203" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apprentices:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fd1-by-F3d">
+                        <rect key="frame" x="8" y="40" width="203" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jedi apprentices here as a potentially long string of text like this. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rg-mN-INz">
+                        <rect key="frame" x="8" y="66" width="203" height="54"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9rg-mN-INz" firstAttribute="top" secondItem="fd1-by-F3d" secondAttribute="bottom" constant="8" id="7Y9-Xp-3C4"/>
+                    <constraint firstItem="fd1-by-F3d" firstAttribute="leading" secondItem="60b-Wk-XRA" secondAttribute="leading" constant="8" id="9O1-b2-muH"/>
+                    <constraint firstItem="wxm-dk-bjW" firstAttribute="top" secondItem="60b-Wk-XRA" secondAttribute="top" constant="8" id="DbV-5h-soT"/>
+                    <constraint firstAttribute="trailing" secondItem="wxm-dk-bjW" secondAttribute="trailing" constant="8" id="HRb-3I-Aqq"/>
+                    <constraint firstAttribute="trailing" secondItem="fd1-by-F3d" secondAttribute="trailing" constant="8" id="HV4-ka-LZd"/>
+                    <constraint firstItem="fd1-by-F3d" firstAttribute="top" secondItem="wxm-dk-bjW" secondAttribute="bottom" constant="8" id="I3I-lF-QUD"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9rg-mN-INz" secondAttribute="bottom" constant="8" id="aOS-TL-wL6"/>
+                    <constraint firstItem="9rg-mN-INz" firstAttribute="leading" secondItem="60b-Wk-XRA" secondAttribute="leading" constant="8" id="fCA-od-lgL"/>
+                    <constraint firstItem="wxm-dk-bjW" firstAttribute="leading" secondItem="60b-Wk-XRA" secondAttribute="leading" constant="8" id="wUt-7b-H10"/>
+                    <constraint firstAttribute="trailing" secondItem="9rg-mN-INz" secondAttribute="trailing" constant="8" id="xCW-JM-o6h"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="219" height="130"/>
+            <connections>
+                <outlet property="apprenticesLabel" destination="9rg-mN-INz" id="iiM-UW-o0d"/>
+                <outlet property="nameLabel" destination="wxm-dk-bjW" id="608-YU-kat"/>
+                <outlet property="subtitleLabelLeadingConstraint" destination="fCA-od-lgL" id="OG9-oc-fk4"/>
+                <outlet property="subtitleLabelTrailingConstraint" destination="xCW-JM-o6h" id="WuJ-RU-EgO"/>
+            </connections>
+            <point key="canvasLocation" x="-144.20289855072465" y="45.535714285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>

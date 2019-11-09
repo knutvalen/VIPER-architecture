@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dark Side Screen View-->
+        <scene sceneID="aIw-cf-Voe">
+            <objects>
+                <viewController storyboardIdentifier="DarkSideScreenView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="67r-0K-Xj5" customClass="DarkSideScreenView" customModule="VIPER_architecture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kBk-dT-BXN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the dark side" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7c-Zn-JGy">
+                                <rect key="frame" x="16" y="60" width="382" height="33.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sith code title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wxd-aQ-noM">
+                                <rect key="frame" x="16" y="117.5" width="382" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sith code" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAw-tK-THB">
+                                <rect key="frame" x="24" y="146.5" width="366" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Iql-6Y-5KW">
+                                <rect key="frame" x="188.5" y="434.5" width="37" height="37"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Vqy-yI-YfP">
+                                <rect key="frame" x="16" y="180.5" width="382" height="665.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8E8-zj-MjK">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="67r-0K-Xj5" id="duJ-be-Wci"/>
+                                    <outlet property="delegate" destination="67r-0K-Xj5" id="Ort-d6-PGT"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="uAw-tK-THB" firstAttribute="leading" secondItem="2Mc-Fb-KpI" secondAttribute="leading" constant="24" id="0HJ-aH-0D8"/>
+                            <constraint firstItem="2Mc-Fb-KpI" firstAttribute="trailing" secondItem="uAw-tK-THB" secondAttribute="trailing" constant="24" id="1nn-wz-emk"/>
+                            <constraint firstItem="g7c-Zn-JGy" firstAttribute="top" secondItem="2Mc-Fb-KpI" secondAttribute="top" constant="16" id="HES-fM-L4X"/>
+                            <constraint firstItem="Wxd-aQ-noM" firstAttribute="leading" secondItem="2Mc-Fb-KpI" secondAttribute="leading" constant="16" id="Hft-WU-ywI"/>
+                            <constraint firstItem="2Mc-Fb-KpI" firstAttribute="trailing" secondItem="Vqy-yI-YfP" secondAttribute="trailing" constant="16" id="KgD-F7-dRo"/>
+                            <constraint firstItem="uAw-tK-THB" firstAttribute="top" secondItem="Wxd-aQ-noM" secondAttribute="bottom" constant="8" id="MVp-Xy-QnW"/>
+                            <constraint firstItem="Vqy-yI-YfP" firstAttribute="top" secondItem="uAw-tK-THB" secondAttribute="bottom" constant="16" id="P6L-Up-NZC"/>
+                            <constraint firstItem="Iql-6Y-5KW" firstAttribute="centerY" secondItem="2Mc-Fb-KpI" secondAttribute="centerY" id="Z7S-aA-2Jw"/>
+                            <constraint firstItem="2Mc-Fb-KpI" firstAttribute="trailing" secondItem="g7c-Zn-JGy" secondAttribute="trailing" constant="16" id="a8K-ej-ppg"/>
+                            <constraint firstItem="Vqy-yI-YfP" firstAttribute="leading" secondItem="2Mc-Fb-KpI" secondAttribute="leading" constant="16" id="bv1-PJ-Ayh"/>
+                            <constraint firstItem="2Mc-Fb-KpI" firstAttribute="bottom" secondItem="Vqy-yI-YfP" secondAttribute="bottom" constant="16" id="eZN-9S-9Co"/>
+                            <constraint firstItem="g7c-Zn-JGy" firstAttribute="leading" secondItem="2Mc-Fb-KpI" secondAttribute="leading" constant="16" id="mxN-RO-Hrm"/>
+                            <constraint firstItem="Wxd-aQ-noM" firstAttribute="top" secondItem="g7c-Zn-JGy" secondAttribute="bottom" constant="24" id="sKL-0I-1JD"/>
+                            <constraint firstItem="2Mc-Fb-KpI" firstAttribute="trailing" secondItem="Wxd-aQ-noM" secondAttribute="trailing" constant="16" id="tcF-Wh-192"/>
+                            <constraint firstItem="Iql-6Y-5KW" firstAttribute="centerX" secondItem="2Mc-Fb-KpI" secondAttribute="centerX" id="vZp-d8-KdR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Mc-Fb-KpI"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Iql-6Y-5KW" id="bFl-od-x4w"/>
+                        <outlet property="darkSideTitle" destination="g7c-Zn-JGy" id="fG4-fs-NTx"/>
+                        <outlet property="sithCodeRules" destination="uAw-tK-THB" id="5FM-p2-uYF"/>
+                        <outlet property="sithCodeTitle" destination="Wxd-aQ-noM" id="d3I-rp-rln"/>
+                        <outlet property="sithHolocronListCollectionView" destination="Vqy-yI-YfP" id="Hri-Xn-ZyC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pLh-f6-Hdf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-249.27536231884059" y="156.69642857142856"/>
+        </scene>
+    </scenes>
+</document>
